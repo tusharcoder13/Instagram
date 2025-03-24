@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            animation: gradientAnimation 6s infinite alternate;
+        }
+        @keyframes gradientAnimation {
+            0% { background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); }
+            100% { background: linear-gradient(45deg, #4f5bd5, #962fbf, #d62976, #fa7e1e, #feda75); }
+        }
+        .login-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(173, 216, 230, 0.8);
+            text-align: center;
+            width: 400px;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+        }
+        .login-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(173, 216, 230, 1);
+        }
+        .login-container h2 {
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px rgba(255, 0, 150, 0.8), 0 0 20px rgba(255, 0, 150, 0.6);
+            animation: glow 1.5s infinite alternate;
+            position: relative;
+            top: -20px;
+        }
+        .input-container {
+            position: relative;
+            margin: 20px 0;
+        }
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #d62976;
+            border-radius: 25px;
+            outline: none;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        .input-field:focus {
+            border-color: #4f5bd5;
+            box-shadow: 0 0 10px rgba(79, 91, 213, 0.5);
+        }
+        .input-label {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+        .input-field:focus + .input-label,
+        .input-field:not(:placeholder-shown) + .input-label {
+            top: -10px;
+            left: 12px;
+            font-size: 12px;
+            color: #4f5bd5;
+            background: white;
+            padding: 0 5px;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .login-btn:hover {
+            background: linear-gradient(45deg, #d62976, #fa7e1e, #feda75);
+            transform: scale(1.05);
+        }
+        .forgot {
+            display: block;
+            margin-top: 10px;
+            color: #00376b;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+            font-family: 'Poppins', sans-serif;
+        }
+        .forgot:hover {
+            color: #2673c9;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Instagram</h2>
+        <div class="input-container">
+            <input type="text" class="input-field" placeholder=" " id="username">
+            <label for="username" class="input-label">Username or Email</label>
+        </div>
+        <div class="input-container">
+            <input type="password" class="input-field" placeholder=" " id="password">
+            <label for="password" class="input-label">Password</label>
+        </div>
+        <button class="login-btn">Log In</button>
+        <a href="#" class="forgot">Forgot password?</a>
+    </div>
+</body>
+</html>
