@@ -20,5 +20,5 @@ A simple, responsive Instagram clone built using HTML, CSS, and JavaScript. This
 
 ## 📸 Preview
 
-![Screenshot](./preview.png) <!-- Add your project screenshot here -->
+![Screenshot](./preview.png)
 
