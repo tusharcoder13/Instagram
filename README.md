@@ -29,6 +29,3 @@ JavaScript (basic DOM usage)
 
 
 
-
-
-
