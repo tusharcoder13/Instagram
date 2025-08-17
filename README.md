@@ -18,7 +18,6 @@ A simple, responsive Instagram clone built using HTML, CSS, and JavaScript. This
 - CSS3 (Flexbox & Grid)
 - JavaScript (basic DOM usage)
 
-HTML 
 
 
 
