@@ -17,7 +17,7 @@ A simple, responsive Instagram clone built using HTML, CSS, and JavaScript. This
 - HTML5
 - CSS3 (Flexbox & Grid)
 - JavaScript (basic DOM usage)
-- HTmll HTmll HTmll HTmll HTmll
+- HTmll HTmll HTmll HTmll 
 
 
 
